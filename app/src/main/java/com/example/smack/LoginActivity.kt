@@ -10,10 +10,14 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
     }
-    fun onCreateUserClicked(view: View) {
+    fun onLoginCreaUserClicked(view: View) {
+        println("crea user clicked")
+        val creaUserIntent = Intent(this, CreateUserActivity::class.java)
+        startActivity(creaUserIntent)
 
     }
     fun onLoginClicked(view: View) {
+        println("login clicked")
 
     }
 }
